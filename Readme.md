@@ -13,7 +13,7 @@
 - Mux (Framework para construir servidores web em Go)
 - Postgres (banco de dados relacional)
 - Docker (para conteinerização)
-- Composição do Docker
+- Docker Compose
 
 ## 🚀 Etapas
 
