@@ -9,7 +9,6 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-etapas">Etapas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-referências">Referências</a>
 </p>
@@ -42,9 +41,7 @@
 - [x] Execute o banco de dados Postgres em um contêiner usando o Docker Compose e teste-o com o TablePlus.
 - [x] Crie a imagem do Go App e execute-a em um contêiner usando o Docker Compose e, em seguida, teste-a com o Insomnia.
 
-## 🗒 Requisitos
-
-## Criando o Projeto
+## 🗒 Criando o Projeto
 
 - Inicializando um novo módulo Go usando este comando
 
@@ -136,6 +133,8 @@ docker compose up --build
 
 
 ## 📄 Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 🙇 Referências
 
