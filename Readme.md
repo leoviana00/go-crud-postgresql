@@ -17,10 +17,10 @@
 
 ## 🚀 Etapas
 
-- [ ] Criar um aplicativo Go usando Mux como uma estrutura
-- [ ] Dockerizar o aplicativo Go escrevendo um Dockerfile e um arquivo docker-compose.yml para executar o aplicativo e o banco de dados.
-- [ ] Execute o banco de dados Postgres em um contêiner usando o Docker Compose e teste-o com o TablePlus.
-- [ ] Crie a imagem do Go App e execute-a em um contêiner usando o Docker Compose e, em seguida, teste-a com o Insomnia.
+- [x] Criar um aplicativo Go usando Mux como uma estrutura
+- [x] Dockerizar o aplicativo Go escrevendo um Dockerfile e um arquivo docker-compose.yml para executar o aplicativo e o banco de dados.
+- [x] Execute o banco de dados Postgres em um contêiner usando o Docker Compose e teste-o com o TablePlus.
+- [x] Crie a imagem do Go App e execute-a em um contêiner usando o Docker Compose e, em seguida, teste-a com o Insomnia.
 
 ## 🗒 Requisitos
 
@@ -51,8 +51,73 @@ touch main.go Dockerfile docker-compose.yml
 docker compose up --build
 ```
 
-## 📝 Testando o aplicativo
+## 🔍 Teste o aplicativo
+
+- Requisição `GET` para localhost:8000/users
+- Deve retornar um array vazio
+
+<p align="center">
+  <img alt="Spring" src="images/crud1.png">
+</p>
+
+## 📝 Crie um usuário
+
+- Fazer uma requisição `POST` para localhost:8000/users
+
+- Criar usuário 1.
+
+<p align="center">
+  <img alt="Spring" src="images/crud2.png">
+</p>
+
+- Criar usuário 2.
+
+<p align="center">
+  <img alt="Spring" src="images/crud3.png">
+</p>
+
+- Criar usuário 3.
+
+<p align="center">
+  <img alt="Spring" src="images/crud4.png">
+</p>
+
+## 📝 Obtenha todos os usuários
+
+- Pegar todos os usuários fazendo uma requisição `GET` para localhost:8000/users
+
+<p align="center">
+  <img alt="Spring" src="images/crud5.png">
+</p>
+
+## 📝 Obtenha um usuário
+
+- Obtendo um usuário específico, solicitação `GET` para localhost:8000/user/3
+
+<p align="center">
+  <img alt="Spring" src="images/crud6.png">
+</p>
+
+## 📝 Atualize um usuário
+
+- Atualizando um item em específico, solicitação `PUT` localhost:8000/users/2 fornecendo um novo corpo
+
+<p align="center">
+  <img alt="Spring" src="images/crud7.png">
+</p>
+
+## 📝 Excluir um usuário
+
+- Excluindo o usuário 2, solicitação `DELETE` para localhost:8000/users/2
+
+<p align="center">
+  <img alt="Spring" src="images/crud8.png">
+</p>
+
 
 ## 📄 Licença
 
 ## 🙇 Referências
+
+- [TABLEPLUS](https://tableplus.com/blog/2019/10/tableplus-linux-installation.html)
+- [INSOMNIA](https://insomnia.rest/download)
